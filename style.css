@@ -1,0 +1,61 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('./images/pink.webp') no-repeat center center/cover;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.block {
+  min-height: 160px;
+}
+
+.countdown {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  margin: auto;
+}
+
+.countdown-number {
+  color: #ff02b3; 
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 100px;
+  z-index: 1;
+  position: relative;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  transform: rotateY(-180deg) rotateZ(-90deg); 
+}
+svg circle {
+  stroke-dasharray: 283;
+  stroke-linecap: round;
+  stroke-width: 4px;
+  stroke: #000;
+  fill: none;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 0.3s linear;
+}
+
+svg circle {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  stroke-width: 4px;
+  stroke: #000;
+  fill: none;
+  transition: stroke-dashoffset 0.05s linear; 
+}
